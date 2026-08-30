@@ -33,7 +33,6 @@ def extract_message(stego_images_path):
 
 if __name__=="__main__":
     hide_message("images/sample.png","ME AND MY TEAMMATES ARE MANYA,PARAS,MAHI")
-print("Extracted:", extract_message("images/output.png"))
 # This function reads the hidden bits back out of the image!
 def extract_message(image_path):
     img = Image.open(image_path)
