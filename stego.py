@@ -47,6 +47,7 @@ def extract_message(image_path):
     message_bits = "".join(
         str(flat[i] & 1) for i in range(32, 32 + message_length)
     )
+    chars=[message_bits[i:i+8]for i in range (0,len(message_bits),8)]
 
     # 3. Convert the 0s and 1s back into text characters
     bytes_data = bytearray()
