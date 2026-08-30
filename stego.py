@@ -31,7 +31,8 @@ def extract_message(stego_images_path):
     chars = [message_bits[i:i+8] for i in range(0, len(message_bits), 8)]
     return bytes(int(c, 2) for c in chars).decode('utf-8')
 
-hide_message("images/sample.png", "Me and my teammates are as: MANYA MAHI PARAS", "images/output.png")
+if __name__=="__main__":
+    hide_message("images/sample.png","ME AND MY TEAMMATES ARE MANYA,PARAS,MAHI")
 print("Extracted:", extract_message("images/output.png"))
 # This function reads the hidden bits back out of the image!
 def extract_message(image_path):
