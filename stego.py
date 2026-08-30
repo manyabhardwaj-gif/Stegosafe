@@ -55,4 +55,4 @@ def extract_message(image_path):
         byte = message_bits[i : i + 8]
         bytes_data.append(int(byte, 2))
 
-    return bytes_data.decode("utf-8")
+    return bytes(int(c,2)for c in chars).decode("utf-8")
