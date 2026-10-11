@@ -204,6 +204,6 @@ if stego_upload:
 # ── Footer ────────────────────────────────────────────────
 st.markdown("---")
 st.markdown(
-    "Made by **Manya Bhardwaj · Mahi Kumari · Paras Panwar** "
+    "Made by **Manya Bhardwaj · Mahi Kumari · Ishu Baliyan** "
     "| Guide: **Rohit Gupta**"
 )
