@@ -77,7 +77,7 @@ stego_upload = st.file_uploader("Upload stego PNG image", type=["png"])
 if stego_upload:
     st.image(stego_upload,
              caption="Uploaded Image — hidden message inside!",
-             use_container_width=True)
+             width='stretch')
     st.markdown("---")
 
     # ══════════════════════════════════════════════════════
